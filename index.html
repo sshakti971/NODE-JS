@@ -11,7 +11,14 @@
   <div id="question"></div>
   <div id="options"></div>
   <div id="score"></div>
-  <script src="quiz.js"></script>
+  
+  <script>
+   const user = localStorage.getItem("username");
+if (!user) {
+  window.location.href = "login.html"; // Redirect if not logged in
+}
+</script>
+<script src="quiz.js"></script>
 </body>
 
 </html>

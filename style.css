@@ -1,77 +1,105 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  #question {
-    background-color: #f57424;
-    color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 20px;
-    box-shadow: 0 2px 4px rgba(3, 3, 3, 0.8);
-  }
-  
-  #options {
-    display: flex;
-    background-color: #a1a1a1;
-    width: 50%;
-    border-radius: 8px;
-    flex-direction: column;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  
-  #options button {
-    display: block;
-    width: 80%;
-    height: 40px;
-    cursor: pointer;
-    margin: auto;
-    margin-bottom: 10px;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;
-  }
-  
-  #options button:hover {
-    background-color: #f57424;
-  }
-  
-  #btn {
-    display: flex;
-    width: 50%;
-    margin: auto;
-    justify-content: flex-end;
-  }
-  
-  #next {
-    display: inline-block;
-    background-color: #0084ff;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  #next:hover {
-    background-color: #0060c0;
-  }
-  
-  #score {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-  }
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#question {
+  background-color: #f57424;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto 20px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  font-size: 22px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+#options button {
+  width: 100%;
+  max-width: 400px;
+  height: 45px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+#options button:hover {
+  background-color: #f57424;
+  color: #fff;
+}
+
+#score {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+}
+
+/* Stylish form for login/signup */
+form {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  animation: fadeIn 1s ease-in;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="password"]:hover,
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #00aaff;
+  box-shadow: 0 0 8px rgba(0,170,255,0.4);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0088cc;
+  cursor: pointer;
+}
