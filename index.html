@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Quiz Game</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link your improved theme here -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Quiz Game</h1>
-  <div id="question"></div>
-  <div id="options"></div>
-  <div id="score"></div>
+  <!-- Navigation Bar -->
+<div class="navbar">
+
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="about.html" class="nav-link">About</a>
+</div>
+
+
+  <div class="quiz-container">
+    <h1>Quiz Game</h1>
+    
+    <!-- Question Area -->
+    <div id="question">Question will appear here</div>
+
+    <!-- Options Area -->
+    <div id="options">
+
+    </div>
+    
+    <!-- Next button row -->
+    <div id="btn">
+      <button id="next" style="display:none;">Next</button>
+    </div>
+    
+    <!-- Score Display -->
+    <div id="score"></div>
+    
+
+
+  </div>
+  
+
+<footer class="footer">
+  <div class="footer-content">
+    &copy; 2025 Quiz Game Project. All rights reserved.
+  </div>
+</footer>
+
+
+
+  <!-- Your quiz logic -->
   <script src="quiz.js"></script>
 </body>
-
 </html>
